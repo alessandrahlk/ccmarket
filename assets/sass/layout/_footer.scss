@@ -1,0 +1,57 @@
+.footer {
+
+    background-color: $fundo-footer;
+    padding         : 15rem 0 7rem 0;
+    text-align      : center;
+    color           : #fff;
+    @include respond(tab-small) {
+        padding:8rem 0 4rem 0;
+    }
+    &-chamada-interna {
+        display: inline-block;
+        width  : 65rem;
+    }
+
+    h2 {
+        color        : #FFF;
+        margin-bottom: 3rem; 
+    }
+
+    &-click-web {
+        font-style: italic;
+        font-size : 1.1rem;
+    }
+
+    &-botoes {
+        padding-top: 6rem;
+    }
+
+    &-redessociais {
+        padding: 14rem 0 4rem 0;
+
+        img {
+            padding: 0 .75rem;
+        }
+        @include respond(tab-small) {
+            padding:6rem 0 4rem 0;
+        }
+    }
+
+    &-col-faleconsultor {
+        text-align: right;
+
+        @include respond(tab-small) {
+            text-align: center;
+        }
+    }
+
+    &-col-whatsapp {
+        text-align: left;
+
+        @include respond(tab-small) {
+            text-align: center;
+            margin-top:3rem;
+        }
+    }
+
+}

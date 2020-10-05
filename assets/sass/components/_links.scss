@@ -1,0 +1,27 @@
+a {
+    color: $color_link;
+	text-decoration: none;
+	@include transition(.3s);
+
+	&:visited {
+		color: $color_link;
+	}
+
+	&:hover,
+	&:focus, 
+	&:active {
+		color: $color_link-hover;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+.icones-links {
+	transition   : transform .5s ease;
+	&:hover{
+		transform: scale(1.15);
+	}
+}

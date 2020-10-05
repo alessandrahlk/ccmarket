@@ -1,0 +1,153 @@
+.col-background-celular {
+    background     : url("assets/images/celular.jpg");
+    background-size: cover;
+
+    /*   margin-left: calc(-100vw / 2);*/
+    @include respond(tab-small) {
+        height: 40rem;
+
+    }
+}
+
+.col-novo-jeito {
+    height       : 76rem;
+    padding-left : calc(50vw - 570px);
+    padding-top  : 17rem;
+    padding-right: 14rem;
+
+    @include respond(tab-small) {
+        height    : 100%;
+        text-align: center;
+        padding   : 4rem 1rem;
+    }
+}
+
+.video-explicativo {
+    background: linear-gradient(180deg, $laranja-escuro 80%, #FFF 20%);
+}
+
+.col-digital-descomplicado {
+    padding   : 8rem 0;
+    text-align: center;
+
+    @include respond(tab-small) {
+        padding: 5rem 0;
+    }
+}
+
+.col-entenda-vender {
+    text-align: center;
+
+    img {
+        padding-bottom: 2.5rem;
+    }
+}
+
+.conhecahabitos {
+    margin-top         : 10rem;
+    background         : url("assets/images/bk-conheca-habitos.jpg");
+    background-size    : cover;
+    background-position: 40% 100%;
+    height             : 40rem;
+
+    &-chamada-interna {
+        display: inline-block;
+        width  : 70rem;
+    }
+
+    h2 {
+        color        : #FFF;
+        margin-bottom: 4rem;
+    }
+
+    @include respond(tab-small) {
+        margin-top: 0;
+        height    : 100%;
+        padding   : 2.5rem;
+    }
+}
+
+.vantagens {
+    padding: 10rem 0;
+
+    @include respond(tab-small) {
+        text-align: center;
+        padding   : 5rem 0 0 0;
+    }
+
+    h2 {
+        font-size    : 2.6rem;
+        margin-bottom: 4rem;
+
+        @include respond(tab-small) {
+            font-size: 2.2rem;
+        }
+    }
+
+    p {
+        margin-top: 1.5rem;
+    }
+
+    &-descricao {
+        margin-bottom: 4rem;
+    }
+
+    &-col-logistica{
+        @include respond(tab-small) {
+            padding-bottom:5rem;
+        }
+    }
+
+    &-col-descricao {
+        padding-right: 7rem;
+
+        @include respond(tab-small) {
+            padding: 5rem 1rem 3rem 1rem;
+             order:1;
+        }
+    }
+
+    &-col-destaque {
+        background-color: $laranja-ccmarket;
+        color           : #FFF;
+        padding         : 4rem 3.5rem;
+        text-align      : center;
+        @include respond(tab-small) {
+            order:0;
+            margin: 0 5rem;
+        }
+    }
+
+    &-texto-destaque {
+        font-size: 10rem;
+    }
+}
+
+.empresas {
+    background-color: $laranja-escuro;
+}
+
+.owl-carousel {
+    padding-bottom: 8rem;
+}
+
+.carousel-empresas .owl-item {
+    text-align: center;
+    opacity   : 0.4;
+    @include transition(.3s);
+    @include respond(tab-small) { 
+        opacity:1;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.owl-nav {
+    display: none;
+}
+
+.owl-dots {
+    margin-top: 1rem;
+}

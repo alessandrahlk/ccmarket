@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Market</title>
+    <link rel="icon" href="assets/images/favicon.png">
+
+    <link href="assets/frameworks/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="assets/frameworks/css/animate.min.css" rel="stylesheet">
+    <link href="assets/frameworks/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link href="style.min.css" rel="stylesheet">
+
+    <script src="assets/frameworks/js/jquery.min.js"></script>
+    <script src="assets/frameworks/js/wow.min.js"></script>
+    <script src="assets/frameworks/js/owl.carousel.min.js"></script>
+
+</head>
+
+<body>
+    <script>
+        new WOW().init();
+    </script>
+    <!--
+Alguns detalhes sobre o funcionamento esperado: 
+    Fundo do banner terá um animação (vídeo);
+    Menus ao serem clicados deverão focar em cada respectivo bloco, fazer uma rolagem suave;
+    Animar a entrada dos títulos e textos dos blocos conforme rolagem;
+    Vídeo do bloco 3 abre no mesmo lugar, sem pop-up;
+    No bloco de empresas, já deixar ativo um slide, caso tenham mais marcas;
+    Flecha no rodapé deve rolar a tela até o topo suavemente.
+-->
+    <header id="site-header" class="header">
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" class="header-video">
+            <source src="assets/videos/particles.mp4" type="video/mp4">
+        </video>
+        <div class="header-container">
+            <a href="index.html" class="elemento-desktop logo-site">
+                <img src="assets/images/logo.png">
+            </a>
+            <nav>
+                <input type="checkbox" id="overlay-input" />
+                <label for="overlay-input" id="overlay-button"><span></span></label>
+                <div id="overlay">
+                    <ul>
+                        <li><a href="#ccmarket">CC Market</a></li>
+                        <li><a href="#comofunciona">Como funciona</a></li>
+                        <li><a href="#vantagens">Vantagens</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                        <button id="btn-quero-saber-mais-mobile" class="btn-principal elemento-mobile">Quero saber
+                            mais!</button>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="centraliza-chamada">
+                <div class="header-chamada-interna wow zoomIn">
+                    <a href="index.html" class="elemento-mobile logo-site">
+                        <img src="assets/images/logo.png">
+                    </a>
+                    <h1>
+                        Um Marketplace completo
+                        para indústrias e distribuidoras
+                    </h1>
+                    <h4>
+                        Conecte os seus produtos direto com o consumidor final
+                    </h4>
+                    <button id="btn-quero-saber-mais" class="btn-principal">Quero Saber mais!</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="ccmarket">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-novo-jeito">
+                        <div class="wow fadeInLeft">
+                            <h2 class="">CC Market<br />
+                                <span class="titulo-novo-jeito">O seu novo jeito de vender</span></h2>
+                            <p class="novo-jeito ">
+                                Um marketplace com solução logística completa para que <span class="texto-destaque">os
+                                    seus
+                                    produtos</span> cheguem mais longe.</p>
+                            <p class="novo-jeito">
+                                Distribuição de forma inteligente, moderna e sem obstáculos, criando uma experiência de
+                                compra
+                                positiva para o consumidor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-background-celular">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="comofunciona">
+
+            <div class="video-explicativo">
+                <div class="video">
+
+                    <iframe width="100%" src="https://www.youtube.com/embed/J-mxBPQzuhI?rel=0&amp;showinfo=0"
+                        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-digital-descomplicado wow zoomIn">
+                        <h2>Digital e descomplicado<br />
+                            <span class="titulo-novo-jeito">Entenda como o CC Market vai vender os seus produtos</span>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="row wow fadeInUp">
+                    <div class="owl-carousel owl-theme carousel-entenda">
+                        <div class="col-entenda-vender">
+                            <img src="assets/images/icon-cadastro.jpg">
+                            <h3 class="entenda-vender">Você cadastra os
+                                produtos na plataforma
+                            </h3>
+                            <p>
+                                Nosso painel é totalmente intuitivo. De forma prática e rápida você cadastra produtos e
+                                controla
+                                o estoque com facilidade.
+                            </p>
+                        </div>
+                        <div class="col-entenda-vender">
+                            <img src="assets/images/icon-divulgacao.jpg">
+                            <h3 class="entenda-vender">Nós fazemos a
+                                divulgação do CC Market
+                            </h3>
+                            <p>
+                                Invista seu tempo apenas no cadastro de produtos e venda 24 horas por dia. O marketing
+                                fica
+                                por
+                                nossa conta.
+                            </p>
+                        </div>
+                        <div class="col-entenda-vender">
+                            <img src="assets/images/icon-entrega.jpg">
+                            <h3 class="entenda-vender">Nós buscamos e
+                                entregamos para o cliente
+                            </h3>
+                            <p>
+                                Temos uma logística completa de delivery, que leva a melhor experiência de compra dos
+                                seus
+                                produtos para todo o Brasil.
+                            </p>
+                        </div>
+                        <div class="col-entenda-vender">
+                            <img src="assets/images/icon-receber.jpg">
+                            <h3 class="entenda-vender">Você recebe pela<br />
+                                venda
+                            </h3>
+                            <p>
+                                Com o CC Market você tem retorno rápido sobre o investimento e inadimplência zero.
+                                Vendeu.
+                                Recebeu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="conhecahabitos" class="conhecahabitos">
+            <div class="centraliza-chamada">
+                <div class="conhecahabitos-chamada-interna wow zoomIn">
+                    <h2>Conheça os hábitos de compra
+                        do seu consumidor para lucrar mais!<br />
+                    </h2>
+                    <span class="titulo-novo-jeito">Saiba exatamente quem, como e de onde estão comprando.
+                        Tenha acesso ao mix total da compra.</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="vantagens" class="vantagens">
+            <div class="container">
+                <div class="row  wow fadeInUp">
+                    <div class="col-lg-4 vantagens-col-logistica">
+                        <h2>Com logística e tecnologia, criamos uma solução que pode ser o seu novo novo jeito de
+                            vender.
+                            <br />
+                        </h2>
+                        <span class="titulo-novo-jeito">Uma alternativa B2C para empresas B2B!</span>
+
+                    </div>
+
+                    <div class="col-lg-5 vantagens-col-descricao">
+                        <div class="vantagens-descricao">
+                            <h3>
+                                Você precifica, nós vendemos.
+                            </h3>
+                            <p>
+                                O preço de todos os produtos é da sua total escolha, não colocamos nenhum adicional ou
+                                empecilho
+                                para a realização da venda.
+                            </p>
+                        </div>
+                        <div class="vantagens-descricao">
+                            <h3>
+                                Baixo custo operacional
+                            </h3>
+                            <p>
+                                Você não precisa se preocupar com frotas e outras contas extras.
+                            </p>
+                        </div>
+                        <div class="vantagens-descricao">
+                            <h3>
+                                Ativação em curto prazo
+                            </h3>
+                            <p>
+                                Implementação ágil para você começar a vender o quanto antes
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 vantagens-col-destaque">
+                        <h3>Inadimplência de<br /><span class="vantagens-texto-destaque">0%</span><br />
+                            vendendo com
+                            o CC Market.</h3>
+
+                        <p>
+                            Com a venda online,
+                            a compra só é aceita após
+                            a confirmação do
+                            pagamento.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="empresas">
+            <div class="container">
+                <h2 class="titulo-empresas wow zoomIn">
+                    Empresas que já estão vendendo pelo CC Market
+                </h2>
+                <div class="owl-carousel owl-theme carousel-empresas">
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                    <div>
+                        <img src="assets/images/logo-empresa.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="row text-center  wow zoomIn">
+                <div class="col-12 text-center">
+                    <h2>Modernize o seu negócio
+                    </h2>
+                    <span class="titulo-novo-jeito">Seja digital, alcance mais clientes e aumente sua receita
+                        mensal.</span>
+                </div>
+
+            </div>
+            <div class="row footer-botoes wow zoomIn">
+                <div class="col-lg-6 footer-col-faleconsultor">
+                    <a href=""><button id="btn-fale-consultor" class="btn-principal-footer">Fale com um consultor</button></a>
+                </div>
+                <div class="col-lg-6 footer-col-whatsapp">
+                    <a href=""><button id="btn-whatsapp" class="btn-whatsapp">Nosso Whatsapp</button></a>
+                </div>
+            </div>
+
+            <div class="row wow fadeIn">
+                <div class="col-12 text-center footer-redessociais">
+                    <a href=""><img src="assets/images/icon-facebook.jpg" class="icones-links"></a>
+                    <a href=""> <img src="assets/images/icon-twitter.jpg" class="icones-links"> </a>
+                    <a href=""> <img src="assets/images/icon-instagram.jpg" class="icones-links"> </a>
+                    <a href=""> <img src="assets/images/icon-youtube.jpg" class="icones-links"> </a>
+                </div>
+            </div>
+
+            <div class="row wow fadeIn">
+                <div class="col-12 text-center">
+                    <a href=""><span class="footer-click-web">clickweb</span></a>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+    <a title="Voltar ao topo da página" href="#site-header">
+        <div class="btn-voltartopo icones-links">
+            <img src="assets/images/icon-voltar.jpg">
+        </div>
+    </a>
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.carousel-entenda').owlCarousel({
+                nav: false,
+                loop: true,
+                autoplay: false,
+                autoplayTimeout: 5000,
+                dots: true,
+                margin: 20,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    992: {
+                        items: 4,
+                        nav: true,
+                        loop: false
+                    }
+                }
+
+            });
+            jQuery('.carousel-empresas').owlCarousel({
+                items: 5,
+                nav: false,
+                loop: true,
+                autoplayHoverPause: true, // Stops autoplay
+                autoplay: true,
+                autoplayTimeout: 5000,
+                dots: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 2,
+                        nav: true
+                    },
+                    992: {
+                        items: 4,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+
+</html>

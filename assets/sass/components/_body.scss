@@ -1,0 +1,23 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body{ 
+  font-family: $font_main;
+  font-weight: 400;
+  font-size: 1.8rem;  
+  @include respond(tab-small) {}
+}

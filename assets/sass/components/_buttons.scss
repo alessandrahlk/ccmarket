@@ -1,0 +1,85 @@
+button{
+    cursor:pointer;
+}
+
+.btn-principal{
+    background-color:#f86401;
+   // padding:3rem 6rem; 
+   width: 38rem;
+   height:8rem;
+    border-radius:4rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:#FFF;
+    border: 0;
+    text-transform: uppercase; 
+    @include transition(.3s);
+    &:hover{
+        background-color:$laranja-ccmarket-claro;
+    }
+    @include respond(tab-small) { 
+        height:6rem;
+        width:28rem;
+    } 
+}
+
+.btn-whatsapp{
+    background-color:transparent;
+    border:solid 2px #FFF; 
+    width: 38rem;
+    height:8rem;
+    border-radius:4rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 700; 
+    color:#FFF;
+    text-transform: uppercase; 
+    @include transition(.3s);
+    &:hover{
+        border-color:$btn-whatsapp-hover;
+        color:$btn-whatsapp-hover;
+    }
+    @include respond(tab-small) { 
+ 
+        width:32rem;
+    } 
+}
+
+.btn-principal-footer{
+    background-color:#f86401;
+   width: 38rem;
+   height:8rem;
+    border-radius:4rem;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color:#FFF;
+    border: 0;
+    text-transform: uppercase;  
+    @include transition(.3s);
+    &:hover{
+        background-color:$laranja-ccmarket-claro;
+    }
+    @include respond(tab-small) { 
+        width:32rem;
+    } 
+}
+
+.btn-voltartopo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+    background:#000;
+    line-height: 0;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    z-index: 100;
+    cursor: pointer;
+}

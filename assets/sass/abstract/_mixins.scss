@@ -1,0 +1,64 @@
+//Responsive Breakpoints
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px   Desktop
+1800px + :      Big desktop
+1em = 16px
+*/
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 36em) {
+            @content
+        }
+
+        ; //576px
+    }
+
+    @if $breakpoint==tab-small {
+        @media only screen and (max-width: 48em) {
+            @content
+        }
+
+        ; //768px
+    }
+
+    @if $breakpoint==tab-port {
+        @media only screen and (max-width: 62em) {
+            @content
+        }
+
+        ; //992px
+    }
+
+    @if $breakpoint==small-desk { 
+        @media only screen and (max-width: 75em) {
+            @content
+        }
+
+        ; //1200px
+    }
+}
+
+@mixin transform-translate($translateX,$translateY) {
+    -webkit-transform: translateX($translateX) translateY($translateY);
+    -moz-transform   : translateX($translateX) translateY($translateY);
+    -ms-transform    : translateX($translateX) translateY($translateY);
+    transform        : translateX($translateX) translateY($translateY);
+}
+
+
+@mixin transition($time) {
+    transition        : $time;
+    -webkit-transition: $time;
+    -moz-transition   : $time;
+    -o-transition     : $time;
+}
+
+@mixin filter($param) {
+    filter        : $param;
+    -webkit-filter: $param;
+
+}

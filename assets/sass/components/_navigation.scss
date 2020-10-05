@@ -1,0 +1,167 @@
+@keyframes bugfix {
+    from {
+        padding: 0;
+    }
+
+    to {
+        padding: 0;
+    }
+}
+
+@-webkit-keyframes bugfix {
+    from {
+        padding: 0;
+    }
+
+    to {
+        padding: 0;
+    }
+}
+
+nav {
+    animation        : bugfix infinite 1s;
+    -webkit-animation: bugfix infinite 1s;
+}
+
+//https://codepen.io/danhearn/pen/XprGrJ
+#overlay-button {
+    display: none;
+
+    @include respond(tab-small) {
+        display: block;
+    }
+
+    position   : absolute;
+    top: 2.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding    : 26px 15px;
+    z-index    : 2;
+    user-select: none;
+    background: $laranja-ccmarket;
+    line-height: 0;
+    border-radius: 50%;
+    height: 5.6rem;
+    width: 5.6rem; 
+    color:#FFF;
+    span {
+        height          : 4px;
+        width           : 28px;
+        border-radius   : 2px; 
+        background-color: white;
+        position        : relative;
+        display         : block;
+        transition      : all .2s ease-in-out;
+        color:#FFF;
+        &:before {
+            top       : -10px;
+            visibility: visible;
+        }
+
+        &:after {
+            top: 10px;
+        }
+
+        &:before,
+        &:after {
+            height          : 4px;
+            width           : 28px;
+            border-radius   : 2px;
+            background-color: white;
+            position        : absolute;
+            content         : "";
+            transition      : all .2s ease-in-out;
+        }
+    }
+
+    &:hover span,
+    &:hover span:before,
+    &:hover span:after {
+        background:  #FFF;
+    }
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked~#overlay {
+    visibility: visible;
+}
+
+input[type=checkbox]:checked~#overlay-button {
+
+    &:hover span,
+    span {
+        background: transparent;
+    }
+
+    span {
+        &:before {
+            transform: rotate(45deg) translate(7px, 7px);
+            opacity  : 1;
+        }
+
+        &:after {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+    }
+}
+
+#overlay {
+
+    ul {
+        display         : -webkit-box;
+        display         : -ms-flexbox;
+        display         : flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack   : end; 
+        justify-content : flex-end;
+        list-style      : none;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    li {
+        float       : left;
+        padding: 0 20px;
+    }
+
+    @include respond(tab-small) {
+        height    : 100vh;
+        width     : 100vw;
+        background: #ec6451;
+        z-index   : 1;
+        position: absolute;
+        visibility: hidden;
+
+        &.active {
+            visibility: visible;
+        }
+
+        ul {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            flex-direction : column;
+            text-align     : center;
+            height         : 100vh;
+            padding-left   : 0;
+            list-style-type: none;
+
+            li {
+                padding: 1em;
+
+                a {
+                    color          : white;
+                    text-decoration: none;
+                    font-size      : 1.5em;
+
+                    &:hover {
+                        color: #333332;
+                    }
+                }
+            }
+        }
+    }
+}

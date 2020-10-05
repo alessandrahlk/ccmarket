@@ -1,0 +1,713 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+1200 - 1800px   Desktop
+1800px + :      Big desktop
+1em = 16px
+*/
+.titulo-novo-jeito {
+  font-size: 2.6rem;
+  color: #f86401;
+  font-weight: 700;
+}
+@media only screen and (max-width: 48em) {
+  .titulo-novo-jeito {
+    font-size: 2.2rem;
+  }
+}
+
+.novo-jeito {
+  font-size: 2rem;
+  margin-top: 4rem;
+  line-height: 3rem;
+}
+@media only screen and (max-width: 48em) {
+  .novo-jeito {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+}
+
+.texto-destaque {
+  color: #f86401;
+}
+
+.centraliza-chamada {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+h1 {
+  font-size: 4.6rem;
+  font-weight: 700;
+}
+@media only screen and (max-width: 48em) {
+  h1 {
+    font-size: 2.6rem;
+  }
+}
+
+h2 {
+  font-size: 3.8rem;
+}
+@media only screen and (max-width: 48em) {
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+
+h2.titulo-empresas {
+  font-size: 2.6rem;
+  color: #f86401;
+  padding: 7rem 0;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h3.entenda-vender {
+  font-size: 2.17rem;
+  padding-bottom: 1.5rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 48em) {
+  h4 {
+    font-size: 1.8rem;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-principal {
+  background-color: #f86401;
+  width: 38rem;
+  height: 8rem;
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #FFF;
+  border: 0;
+  text-transform: uppercase;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn-principal:hover {
+  background-color: #fb8e46;
+}
+@media only screen and (max-width: 48em) {
+  .btn-principal {
+    height: 6rem;
+    width: 28rem;
+  }
+}
+
+.btn-whatsapp {
+  background-color: transparent;
+  border: solid 2px #FFF;
+  width: 38rem;
+  height: 8rem;
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #FFF;
+  text-transform: uppercase;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn-whatsapp:hover {
+  border-color: #bebebe;
+  color: #bebebe;
+}
+@media only screen and (max-width: 48em) {
+  .btn-whatsapp {
+    width: 32rem;
+  }
+}
+
+.btn-principal-footer {
+  background-color: #f86401;
+  width: 38rem;
+  height: 8rem;
+  border-radius: 4rem;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #FFF;
+  border: 0;
+  text-transform: uppercase;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+.btn-principal-footer:hover {
+  background-color: #fb8e46;
+}
+@media only screen and (max-width: 48em) {
+  .btn-principal-footer {
+    width: 32rem;
+  }
+}
+
+.btn-voltartopo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 2rem;
+  background: #000;
+  line-height: 0;
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  z-index: 100;
+  cursor: pointer;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+a:visited {
+  color: #ffffff;
+}
+a:hover, a:focus, a:active {
+  color: #e2e2e2;
+}
+a:hover, a:active {
+  outline: 0;
+}
+
+.icones-links {
+  transition: transform 0.5s ease;
+}
+.icones-links:hover {
+  transform: scale(1.15);
+}
+
+.video {
+  height: 52rem;
+  width: 90rem;
+  margin: 7rem auto 0 auto;
+}
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+@media only screen and (max-width: 62em) {
+  .video {
+    width: auto;
+    height: 40rem;
+    margin: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+nav {
+  animation: bugfix infinite 1s;
+  -webkit-animation: bugfix infinite 1s;
+}
+
+#overlay-button {
+  display: none;
+  position: absolute;
+  top: 2.5em;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 26px 15px;
+  z-index: 2;
+  user-select: none;
+  background: #f86401;
+  line-height: 0;
+  border-radius: 50%;
+  height: 5.6rem;
+  width: 5.6rem;
+  color: #FFF;
+}
+@media only screen and (max-width: 48em) {
+  #overlay-button {
+    display: block;
+  }
+}
+#overlay-button span {
+  height: 4px;
+  width: 28px;
+  border-radius: 2px;
+  background-color: white;
+  position: relative;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  color: #FFF;
+}
+#overlay-button span:before {
+  top: -10px;
+  visibility: visible;
+}
+#overlay-button span:after {
+  top: 10px;
+}
+#overlay-button span:before, #overlay-button span:after {
+  height: 4px;
+  width: 28px;
+  border-radius: 2px;
+  background-color: white;
+  position: absolute;
+  content: "";
+  transition: all 0.2s ease-in-out;
+}
+#overlay-button:hover span, #overlay-button:hover span:before, #overlay-button:hover span:after {
+  background: #FFF;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]:checked ~ #overlay {
+  visibility: visible;
+}
+
+input[type=checkbox]:checked ~ #overlay-button:hover span,
+input[type=checkbox]:checked ~ #overlay-button span {
+  background: transparent;
+}
+input[type=checkbox]:checked ~ #overlay-button span:before {
+  transform: rotate(45deg) translate(7px, 7px);
+  opacity: 1;
+}
+input[type=checkbox]:checked ~ #overlay-button span:after {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+#overlay ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  list-style: none;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+#overlay li {
+  float: left;
+  padding: 0 20px;
+}
+@media only screen and (max-width: 48em) {
+  #overlay {
+    height: 100vh;
+    width: 100vw;
+    background: #ec6451;
+    z-index: 1;
+    position: absolute;
+    visibility: hidden;
+  }
+  #overlay.active {
+    visibility: visible;
+  }
+  #overlay ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding-left: 0;
+    list-style-type: none;
+  }
+  #overlay ul li {
+    padding: 1em;
+  }
+  #overlay ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+  }
+  #overlay ul li a:hover {
+    color: #333332;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+.header {
+  background: url("assets/images/bk-top.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60rem;
+  padding: 3rem;
+  color: #FFF;
+  overflow: hidden;
+  position: relative;
+}
+.header-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+@media only screen and (max-width: 48em) {
+  .header-video {
+    display: none;
+  }
+}
+.header-container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+@media only screen and (max-width: 48em) {
+  .header {
+    padding: 0;
+    height: 44rem;
+    overflow: visible;
+    background: url("assets/images/bk-top.jpg") black no-repeat cover center center;
+  }
+}
+.header-chamada-interna {
+  display: inline-block;
+  width: 65rem;
+}
+@media only screen and (max-width: 48em) {
+  .header-chamada-interna {
+    margin-top: 3rem;
+    padding: 0 0.5rem;
+  }
+}
+.header .btn-principal {
+  margin-top: 5rem;
+}
+@media only screen and (max-width: 48em) {
+  .header .btn-principal {
+    margin-top: 4rem;
+  }
+}
+.header h4 {
+  margin-top: 2.2rem;
+}
+
+.logo-site {
+  float: left;
+}
+@media only screen and (max-width: 48em) {
+  .logo-site {
+    padding: 1.5rem 0;
+    float: none;
+  }
+}
+
+.elemento-mobile {
+  display: none;
+}
+@media only screen and (max-width: 48em) {
+  .elemento-mobile {
+    display: block;
+  }
+}
+
+.elemento-desktop {
+  display: block;
+}
+@media only screen and (max-width: 48em) {
+  .elemento-desktop {
+    display: none;
+  }
+}
+
+.col-background-celular {
+  background: url("assets/images/celular.jpg");
+  background-size: cover;
+  /*   margin-left: calc(-100vw / 2);*/
+}
+@media only screen and (max-width: 48em) {
+  .col-background-celular {
+    height: 40rem;
+  }
+}
+
+.col-novo-jeito {
+  height: 76rem;
+  padding-left: calc(50vw - 570px);
+  padding-top: 17rem;
+  padding-right: 14rem;
+}
+@media only screen and (max-width: 48em) {
+  .col-novo-jeito {
+    height: 100%;
+    text-align: center;
+    padding: 4rem 1rem;
+  }
+}
+
+.video-explicativo {
+  background: linear-gradient(180deg, #f7f3ed 80%, #FFF 20%);
+}
+
+.col-digital-descomplicado {
+  padding: 8rem 0;
+  text-align: center;
+}
+@media only screen and (max-width: 48em) {
+  .col-digital-descomplicado {
+    padding: 5rem 0;
+  }
+}
+
+.col-entenda-vender {
+  text-align: center;
+}
+.col-entenda-vender img {
+  padding-bottom: 2.5rem;
+}
+
+.conhecahabitos {
+  margin-top: 10rem;
+  background: url("assets/images/bk-conheca-habitos.jpg");
+  background-size: cover;
+  background-position: 40% 100%;
+  height: 40rem;
+}
+.conhecahabitos-chamada-interna {
+  display: inline-block;
+  width: 70rem;
+}
+.conhecahabitos h2 {
+  color: #FFF;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 48em) {
+  .conhecahabitos {
+    margin-top: 0;
+    height: 100%;
+    padding: 2.5rem;
+  }
+}
+
+.vantagens {
+  padding: 10rem 0;
+}
+@media only screen and (max-width: 48em) {
+  .vantagens {
+    text-align: center;
+    padding: 5rem 0 0 0;
+  }
+}
+.vantagens h2 {
+  font-size: 2.6rem;
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 48em) {
+  .vantagens h2 {
+    font-size: 2.2rem;
+  }
+}
+.vantagens p {
+  margin-top: 1.5rem;
+}
+.vantagens-descricao {
+  margin-bottom: 4rem;
+}
+@media only screen and (max-width: 48em) {
+  .vantagens-col-logistica {
+    padding-bottom: 5rem;
+  }
+}
+.vantagens-col-descricao {
+  padding-right: 7rem;
+}
+@media only screen and (max-width: 48em) {
+  .vantagens-col-descricao {
+    padding: 5rem 1rem 3rem 1rem;
+    order: 1;
+  }
+}
+.vantagens-col-destaque {
+  background-color: #f86401;
+  color: #FFF;
+  padding: 4rem 3.5rem;
+  text-align: center;
+}
+@media only screen and (max-width: 48em) {
+  .vantagens-col-destaque {
+    order: 0;
+    margin: 0 5rem;
+  }
+}
+.vantagens-texto-destaque {
+  font-size: 10rem;
+}
+
+.empresas {
+  background-color: #f7f3ed;
+}
+
+.owl-carousel {
+  padding-bottom: 8rem;
+}
+
+.carousel-empresas .owl-item {
+  text-align: center;
+  opacity: 0.4;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+@media only screen and (max-width: 48em) {
+  .carousel-empresas .owl-item {
+    opacity: 1;
+  }
+}
+.carousel-empresas .owl-item:hover {
+  opacity: 1;
+}
+
+.owl-nav {
+  display: none;
+}
+
+.owl-dots {
+  margin-top: 1rem;
+}
+
+.footer {
+  background-color: #0d1b2c;
+  padding: 15rem 0 7rem 0;
+  text-align: center;
+  color: #fff;
+}
+@media only screen and (max-width: 48em) {
+  .footer {
+    padding: 8rem 0 4rem 0;
+  }
+}
+.footer-chamada-interna {
+  display: inline-block;
+  width: 65rem;
+}
+.footer h2 {
+  color: #FFF;
+  margin-bottom: 3rem;
+}
+.footer-click-web {
+  font-style: italic;
+  font-size: 1.1rem;
+}
+.footer-botoes {
+  padding-top: 6rem;
+}
+.footer-redessociais {
+  padding: 14rem 0 4rem 0;
+}
+.footer-redessociais img {
+  padding: 0 0.75rem;
+}
+@media only screen and (max-width: 48em) {
+  .footer-redessociais {
+    padding: 6rem 0 4rem 0;
+  }
+}
+.footer-col-faleconsultor {
+  text-align: right;
+}
+@media only screen and (max-width: 48em) {
+  .footer-col-faleconsultor {
+    text-align: center;
+  }
+}
+.footer-col-whatsapp {
+  text-align: left;
+}
+@media only screen and (max-width: 48em) {
+  .footer-col-whatsapp {
+    text-align: center;
+    margin-top: 3rem;
+  }
+}
+
+/*# sourceMappingURL=style.min.css.map */
